@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">GUIDE</string>
+    <string name="strLogin">Login</string>
+    <string name="strEmail">Email</string>
+    <string name="strPass">Password</string>
+    <string name="strName">Name</string>
+    <string name="strGender">Gender</string>
+    <string name="strAge">Age</string>
+    <string name="strPhone">Phone</string>
+    <string name="strNewAccount">Create new account</string>
+    <string name="strSignup">Sign up</string>
+    <string name="strConPass">Confirm Password</string>
+    <string name="strRecoverPass">Recover Password</string>
+    <string name="strAdmissionInstr">Note: Select the CheckBox Instructions and Select the red mark and select the Directions to see the path to your Destination.</string>
+
+    <string name="req">Note: To Pursue Admission in Undergraduate. You must have following <b>Docuemnts.</b></string>
+    <string name="docs">1) Admission Slip.\n2) Intermediate Marksheet.\n3) NIC/B-Form.\n4) Father\'s NIC.
+                        \n5) District Domicile.\n6) Domicile Form C.\n7) Domicile Form D.
+                        \n8) Fitness Certificate From a Doctor.</string>
+
+    <!-- Google Maps Key-->
+    <string name="api_key">AIzaSyAYCCQSeizxqzOek7dtMuJQZc5ohWSgtnA</string>
+
+
+    <!-- Admission Instructions    -->
+    <string name="str_step1">Submit Admit Slip to Department</string>
+    <string name="str_step2">Pay the Admission Fees in the Bank</string>
+    <string name="str_step3">Submit the Documents in Admin Block</string>
+
+
+    <!-- Smart Card    -->
+    <string name="str_PersonalInfo">Personal Information</string>
+    <string name="str_AddressInfo">Address and Contact Information</string>
+    <string name="str_AdmissionInfo">Admission Information</string>
+
+    <string name="str_emergencyInfo">Emergency Contact</string>
+
+    <string-array name="provinces">
+        <item>Sindh</item>
+        <item>Punjab</item>
+        <item>Balochistan</item>
+        <item>Khyber PakhtoonKhuwah</item>
+        <item>Gilgit Baltistan</item>
+    </string-array>
+
+    <string-array name="bloodGroup">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="departments">
+        <item>Architecture Engineering</item>
+        <item>Biomedical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Environmental Engineering</item>
+        <item>Industrial Engineering</item>
+        <item>Mining Engineering</item>
+        <item>Metallurgy Engineering</item>
+        <item>Software Engineering</item>
+        <item>Telecommunication Engineering</item>
+        <item>Textile Engineering</item>
+
+    </string-array>
+</resources>

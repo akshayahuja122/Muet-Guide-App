@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GreetingActivity">
+
+
+    <ImageView
+        android:layout_above="@+id/txtGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/student"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Welcome to MUET"
+        />
+
+    <TextView
+        android:layout_below="@+id/txtGreetings"
+        android:id="@+id/admission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="You have got Admission in"
+        />
+
+    <TextView
+        android:id="@+id/textViewDepartment"
+        android:layout_below="@+id/admission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="@color/colorOrange"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/txtGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/like"
+        />
+
+</RelativeLayout>

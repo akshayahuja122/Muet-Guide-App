@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. For all the Devices-->
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item> <!--Button background Color-->
+        <item name="colorControlHighlight">@color/colorBrightYellow</item> <!--Button when clicked Color-->
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="android:colorFocusedHighlight">@color/colorPrimaryDark</item>
+    </style>
+    
+    <style name="AppMaterialTheme" parent="SuperMaterialTheme">
+
+    </style>
+
+</resources>

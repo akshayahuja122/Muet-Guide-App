@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartCardActivity1"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/SuperMaterialTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_smart_card"
+            android:layout_marginLeft="20dp"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/toolbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/cardType"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            />
+
+        <RadioGroup
+            android:id="@+id/cardOption"
+            android:layout_toEndOf="@+id/cardType"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp">
+
+            <RadioButton
+                android:id="@+id/rdbNew"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"/>
+
+            <RadioButton
+                android:id="@+id/rdbRenew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Renew"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewPersonalINfo"
+        android:layout_below="@id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorBlack"
+        android:text="@string/str_PersonalInfo"/>
+
+    <View
+        android:layout_below="@+id/textViewPersonalINfo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/name"
+        android:layout_below="@+id/textViewPersonalINfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/FName"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/edtFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Father's Name"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/NIC"
+        android:layout_below="@+id/FName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/edtNIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CNIC"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_marginTop="15dp"
+        android:id="@+id/gender"
+        android:layout_below="@+id/NIC"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/rdbMale"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Male"
+            android:textSize="14sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rdbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Female"
+            android:textSize="14sp"/>
+
+    </RadioGroup>
+
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewdDate"
+        android:layout_below="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Date of Birth"
+        android:textSize="16dp"
+        android:textColor="@color/colorBlack"
+        />
+
+    <Button
+        android:layout_marginTop="14dp"
+        android:id="@+id/btnDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewdDate"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:text="Select"
+        android:layout_marginLeft="15dp"
+        />
+
+    <TextView
+        android:layout_alignBaseline="@+id/btnDOB"
+        android:id="@+id/textViewDOB"
+        android:layout_below="@+id/NIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Date of Birth"
+        android:layout_toRightOf="@id/btnDOB"
+        android:background="@drawable/note_frame"
+        android:layout_marginRight="15dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/btnDOB"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="Next"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookChallanActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Book Challan"
+            android:textSize="30dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/title"
+            android:src="@drawable/book"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/AccountNumber"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <EditText
+            android:id="@+id/edtAccountNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Account Number"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bookName"
+        android:layout_below="@+id/AccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <EditText
+            android:id="@+id/edtBookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Name/Title"
+            android:singleLine="true"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/BookId"
+        android:layout_below="@+id/bookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <EditText
+            android:id="@+id/edtBookId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book ID"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RollNumber"
+        android:layout_below="@+id/BookId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+
+        <EditText
+            android:id="@+id/edtRollNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roll Number"
+            android:singleLine="true"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_marginTop="14dp"
+        android:id="@+id/btnIssued"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/RollNumber"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:layout_marginLeft="40dp"
+        android:text="Select"
+        />
+
+    <TextView
+        android:id="@+id/bookIssueDate"
+        android:layout_alignBaseline="@+id/btnIssued"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btnIssued"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Issue Date"
+        android:layout_below="@+id/RollNumber"
+        />
+
+    <TextView
+        android:id="@+id/payableTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIssued"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="Payable Fine"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/payableAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIssued"
+        android:layout_toRightOf="@+id/payableTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_below="@id/payableAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="Pay"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:onClick="onPay"
+        />
+
+
+</RelativeLayout>
